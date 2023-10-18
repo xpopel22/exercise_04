@@ -2,8 +2,8 @@
 ### Task 1 - The change problem
 Convert some amount of money into the fewest number of coins.
 
-* Input: the amount of money `M` to be returned
-* Output: the minimum number of coins whose total value will be equal to `M`
+* Input: an amount of money `M` to be returned
+* Output: a minimum number of coins whose total value will be equal to `M`
 * Resource: coins in denominations of 50 (`pd`), 20(`dc`), 10(`ds`), 5(`p`), 2(`d`) and 1(`j`) CZK
 * Condition: `50 * pd + 20 * dc + 10 * ds + 5 * p + 2 * d + 1 * j = M`, `pd`, `dc`, `ds`, `p`, `d` and `j` must have the smallest possible value
 
@@ -72,15 +72,15 @@ Output a list of moves that solves the towers of Hanoi problem.
   * a number of discs `n`
   * an index `fromPeg` of starting peg
   * an index `toPeg` of a peg, where all disks should be to moved to
-* Output: a sequence of moves that will solve the `n`-disk towers of Hanoi problem
+* Output: a sequence of steps to solve the towers of Hanoi problem with `n` discs
 ```
 HanoiTowers(n, fromPeg, toPeg)
 1  if n = 1
-2    output „Move disc from peg fromPeg to peg toPeg“
+2    output "Move disc from peg fromPeg to peg toPeg"
 3    return
 4  unusedPeg ← 6 – fromPeg – toPeg
 5  HanoiTowers(n – 1, fromPeg, unusedPeg)
-6  output „Move disc from peg fromPeg to peg toPeg“
+6  output "Move disc from peg fromPeg to peg toPeg"
 7  HanoiTowers(n – 1, emptyPeg, toPeg)
 8  return
 ```
