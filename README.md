@@ -2,19 +2,19 @@
 
 ## The Change Problem
 ### Task 1
- * Convert some amount of money into the fewest number of coins.
+* Convert some amount of money into the fewest number of coins.
 
- * Input:
-   * an amount of money `M` to be returned
+* Input:
+    * an amount of money `M` to be returned
 
- * Output:
-   * a minimum number of coins whose total value will be equal to `M`
+* Output:
+    * the minimum number of coins whose total value will be equal to `M`
 
- * Resources:
-   * coins in denominations of 50 (`pd`), 20(`dc`), 10(`ds`), 5(`p`), 2(`d`) and 1(`j`) CZK
+* Resources:
+    * coins in denominations of 50 (`pd`), 20(`dc`), 10(`ds`), 5(`p`), 2(`d`) and 1(`j`) CZK
 
- * Condition:
-   * `50 * pd + 20 * dc + 10 * ds + 5 * p + 2 * d + 1 * j = M`, where `pd`, `dc`, `ds`, `p`, `d` and `j` must have the smallest possible value
+* Condition:
+    * `50 * pd + 20 * dc + 10 * ds + 5 * p + 2 * d + 1 * j = M`, where `pd`, `dc`, `ds`, `p`, `d` and `j` must have the smallest possible value
 
 Detailed description:
 ```
@@ -31,39 +31,39 @@ ReturnCoins(M)
 10  Give the customer remainder after division in 1 CZK coins.
 ```
 
- * Write pseudocode according to previous detailed description of the algorithm. 
- * Implement the algorithm in R as a function `ReturnCoins()`.
+* Write pseudocode according to previous detailed description of the algorithm. 
+* Implement the algorithm in R as a function `ReturnCoins()`.
 
 ### Task 2
- * Convert some amount of money `M` into given denominations, using the smallest possible number of coins.
+* Convert some amount of money `M` into given denominations, using the smallest possible number of coins.
 
- * Input:
-   * an amount of money `M` to be returned
-   * an array of `d` denominations `c = (c1, c2, ... , cd)` in descending order `(c1 > c2 > ··· > cd)`
+* Input:
+    * an amount of money `M` to be returned
+    * an array of `d` denominations `c = (c1, c2, ... , cd)` in descending order `(c1 > c2 > ··· > cd)`
 
- * Output:
-   * integer values `i1, i2, ... , id`
+* Output:
+    * integer values `i1, i2, ... , id`
 
- * Condition:
-   * `c1 * i1 + c2 * i2 + ··· + cd * id = M`, where `i1 + i2 + ··· + id` is as small as possible
+* Condition:
+    * `c1 * i1 + c2 * i2 + ··· + cd * id = M`, where `i1 + i2 + ··· + id` is as small as possible
 
- * Write a pseudocode for the change problem for any currency. Hint: use array indexing. 
- * Implement the pseudocode in R as a separate function `UniversalReturnCoins()`. 
- * Find input values for which the algorithm will not work correctly, meaning the output will be incorrect.
+* Write a pseudocode for the change problem for any currency. Hint: use array indexing. 
+* Implement the pseudocode in R as a separate function `UniversalReturnCoins()`. 
+* Find input values for which the algorithm will not work correctly, meaning the output will be incorrect.
 
 ## The Most Chocolate Path
 ### Task 3
- * In R, implement a recursive function `Chocolate()` according to the following pseudocode.
+* In R, implement a recursive function `Chocolate()` according to the following pseudocode.
 
- * Input:
-   * matrix with integer values (number of chocolate bars)
-   * index of current row
-   * index of current column
+* Input:
+    * a matrix with integer values (number of chocolate bars)
+    * an index of current row
+    * an index of current column
 
- * Output:
-   * maximum number of chocolate bars, that can be collected
+* Output:
+    * the maximum number of chocolate bars, that can be collected
 
- * Solve the same problem iteratively.
+* Solve the same problem iteratively.
 
 ```
 Chocolate(M, r, c)
@@ -78,15 +78,15 @@ Chocolate(M, r, c)
 
 ## The Towers of Hanoi
 ### Task 4
-In R, implement a function `HanoiTowers()` according to pseudocode. 
+* In R, implement a function `HanoiTowers()` according to pseudocode. 
 
 * Input:
-  * a number of discs
-  * an index of starting peg
-  * an index of a peg, where all disks will be to moved to
+    * a number of discs
+    * an index of starting peg
+    * an index of a peg, where all disks will be to moved to
 
 * Output:
-  * a sequence of steps to solve the towers of Hanoi problem
+    * a sequence of steps to solve the towers of Hanoi problem
 
 ```
 HanoiTowers(n, fromPeg, toPeg)
@@ -106,19 +106,19 @@ HanoiTowers(n, fromPeg, toPeg)
 <details>
 <summary>Basic Git settings</summary>
 
-> * Configure the Git editor
-> ```bash
-> git config --global core.editor notepad
-> ```
-> * Configure your name and email address
-> ```bash
-> git config --global user.name "Zuzana Nova"
-> git config --global user.email z.nova@vut.cz
-> ```
-> * Check current settings
-> ```bash
-> git config --global --list
-> ```
+>* Configure the Git editor
+>    ```bash
+>    git config --global core.editor notepad
+>    ```
+>* Configure your name and email address
+>    ```bash
+>    git config --global user.name "Zuzana Nova"
+>    git config --global user.email z.nova@vut.cz
+>    ```
+>* Check current settings
+>    ```bash
+>    git config --global --list
+>    ```
 >
 </details>
 
